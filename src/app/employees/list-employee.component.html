@@ -1,0 +1,70 @@
+<div class="panel panel-primary" *ngFor="let employee of employees">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{employee.naam}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="col-xs-10">
+      <div class="row vertical-align">
+        <div class="col-xs-4">
+          <img class="imageClass" [src]="employee.fotoPath" alt="">
+        </div>
+        <div class="col-xs-8">
+          <div class="row">
+            <div class="col-xs-6">
+              Geslacht
+            </div>
+            <div class="col-xs-6">
+              : {{employee.geslacht}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Email
+            </div>
+            <div class="col-xs-6">
+              : {{employee.email}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Geboortedatum
+            </div>
+            <div class="col-xs-6">
+              : {{employee.geboorteDatum | date}}
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Contact Voorkeur
+            </div>
+            <div class="col-xs-6">
+              : {{employee.contactVoorkeur}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Telefoon
+            </div>
+            <div class="col-xs-6">
+              : {{employee.telefoonNr}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Departement
+            </div>
+            <div class="col-xs-6">
+              : {{employee.departement}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Actief ?
+            </div>
+            <div class="col-xs-6">
+              : {{employee.isActief}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
